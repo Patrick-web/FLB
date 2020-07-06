@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLB Music Player</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <video controls src="./assets/videos/converter.mkv"></video>
+    <div class="videoArea"></div>
+    <div class="downloadOptions">
+      <div class="dopt">
+        <p>Windows</p>
+        <a class="dbt" href="http://">Download</a>
+      </div>
+      <div class="dopt">
+        <p id="closeDopt">X</p>
+        <p>Mac</p>
+        <a class="dbt" href="http://">Download</a>
+      </div>
+      <div class="dopt">
+        <p>Linux</p>
+        <a class="dbt" href="http://">Download</a>
+      </div>
+    </div>
+    <main>
+      <img
+        src="./assets/logo.png"
+        class="animated fadeInLeft"
+        id="logo"
+        alt=""
+      />
+      <img
+        class="animated fadeInLeft compShow"
+        src="./assets/Title.png"
+        id="title"
+        alt=""
+      />
+      <img
+        class="animated fadeInLeft phoneHide"
+        src="./assets/phoneHide.png"
+        id="title"
+        alt=""
+      />
+      <img src="./assets/sample1.png" class="animated fadeInRight spl" />
+      <button id="dbt1" class="downloadBt animated fadeInDown delay-2s">
+        <a class="showDOptions">Download</a>
+      </button>
+
+      <section id="catchy" class="animated fadeInUp slow delay-1s">
+        A Unique, Beautiful and just plain awesome music player.
+      </section>
+      <p class="explainer exp1 animated fadeInDown delay-4s">
+        this is the part you scroll down
+      </p>
+    </main>
+
+    <section class="sec">
+      <p
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="800"
+        class="explainer"
+      >
+        and this is the part I sell you on the features
+      </p>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="300"
+        class="explainer"
+      >
+        well apart from the usual stuff of any music player this is what FLB has
+      </p>
+      <div
+        class="features"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="4000"
+      >
+        <div
+          id="showMerger"
+          data-aos="flip-up"
+          data-aos-duration="2000"
+          class="f-card"
+        >
+          <h1>Mixer</h1>
+          <img src="./assets/merge.svg" alt="" />
+        </div>
+        <div
+          id="showConverter"
+          data-aos="flip-down"
+          data-aos-duration="2500"
+          class="f-card"
+        >
+          <h1>Converter</h1>
+          <img src="./assets/convert.svg" alt="" />
+        </div>
+        <div
+          id="soon"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          class="f-card"
+        >
+          <div class="plead">I promise it will be awesome !</div>
+          <h1>Lyrics Maker</h1>
+          <img src="./assets/lyrics.svg" alt="" />
+        </div>
+      </div>
+      <button id="dbt2" class="downloadBt animated bounceInDown">
+        <a class="showDOptions">Download</a>
+      </button>
+    </section>
+    <section class="sec">
+      <img
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="500"
+        class="spl convertImg"
+        id="sp12"
+        src="./assets/converter.png"
+        alt=""
+      />
+      <p
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="300"
+        class="explainer"
+      >
+        the simple things matter...
+      </p>
+      <h3
+        style="
+          color: white;
+          margin-left: 10px;
+          margin-top: 20px;
+          font-size: 1.8em;
+        "
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-offset="300"
+      >
+        FLB:
+      </h3>
+      <div
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-offset="300"
+        class="simpleThings"
+      >
+        <p class="simple">
+          Remembers the Songs you had added
+        </p>
+        <p class="simple">
+          Makes it to easy create a playlist and add a song to it.
+        </p>
+        <p class="simple">
+          Allows you to automatically skip that song your tired of listening to
+        </p>
+        <p class="simple">
+          Reacts to the Music your playing. Don't ask me how, just download and
+          see for yourself
+        </p>
+        <p class="simple">
+          and ofcourse, more
+        </p>
+      </div>
+      <p class="explainer animated fadeInUp">
+        thats all I got. if your still not conviced try clicking this
+        <img src="./assets/arrow.svg" id="arrow" alt="" />
+        <button
+          id="dbt3"
+          class="downloadBt showDOptions animated pulse infinite"
+        >
+          <a class="showDOptions">Click Me Please</a>
+          <div class="plead">Yes Do It !</div>
+        </button>
+      </p>
+      <p class="showInfoCard">
+        So who made FLB ?
+      </p>
+    </section>
+    <section class="sec info">
+      <div class="contact">
+        <p>Name</p>
+        <span>Patrick Waweru</span>
+        <p>Twitter</p>
+        <span>@PnTX10</span>
+        <p>Email</p>
+        <span>pntx200@gmail.com</span>
+        <p>Github</p>
+        <span>Patrick-web</span>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
