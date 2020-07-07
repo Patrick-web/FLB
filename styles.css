@@ -10,6 +10,7 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  position: relative;
 }
 #logo {
   margin-top: 20px;
@@ -350,7 +351,23 @@ video {
 .phoneHide {
   display: none;
 }
-
+#join {
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+  background: rgb(166, 73, 253);
+  padding: 10px;
+  width: 40%;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  margin-top: -100px;
+  transform: translateX(-50%);
+}
+#join:hover {
+  background: rgb(255, 166, 0);
+  border-radius: 30px;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .sec {
